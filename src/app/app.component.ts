@@ -10,12 +10,14 @@ export class AppComponent {
   // title= "Kör területe";
   radius !: number;
   area !: number ;
-  sum !: number;
+  price !: number;
+  halfarea !: number;
 
   calcArea():void{
-    this.area = (Math.pow(this.radius,2)*Math.PI)/2;
+    this.area = Math.pow(this.radius,2)*Math.PI;
+    this.halfarea = this.area/2;
     this.radius = 0;
 
-    this.sum = this.area * 2500;
+    this.price = this.halfarea * 2500;
   }
 }

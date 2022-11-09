@@ -16,13 +16,23 @@
   </div>
 
   <div class="area m-2">
-    <label for="area" class="form-label">Terület fele</label>
-    <input type="text" style="border-radius: 20px;" id="area" class="form-control" [(ngModel)] = 'area' disabled>
+    <label for="area" class="form-label">Teljes Terület</label>
+    <input type="text" style="border-radius: 20px; opacity: 0.5;" id="area" class="form-control" [(ngModel)] = 'area' disabled>
   </div>
 
-  <div class="sum m-2">
-    <label for="sum" class="form-label">Fizetendő összeg</label>
-    <input type="text" style="background-color: rgba(124, 172, 187, 0.342); border-radius: 20px; " id="sum" class="form-control" [(ngModel)] = 'sum' disabled>
+  <div class="halfarea m-2">
+    <label for="halfarea" class="form-label">Terület fele</label>
+    <input type="text" style="border-radius: 20px; opacity: 0.5;" id="halfarea" class="form-control" [(ngModel)] = 'halfarea' disabled>
   </div>
 
+  <div class="price m-2">
+    <label for="price" class="form-label">Fizetendő összeg</label>
+    <input type="text" style="background-color: rgba(124, 172, 187, 0.342); border-radius: 20px; " id="price" class="form-control" [(ngModel)] = 'price' disabled>
+  </div>
+
+  <div class="about m-2 mt-4 text-center" 
+  style="background-color: rgba(58, 163, 163, 0.356);
+  border-radius: 5px;">
+    Kovács Dorina, 2022-11-09, SZOFT II/N
+  </div>
 </div>
